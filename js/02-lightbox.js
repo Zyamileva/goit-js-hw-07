@@ -33,20 +33,7 @@ const gallery = imageGallery(galleryItems);
 
 container.insertAdjacentHTML("beforeend", gallery);
 
-function galleryСlick(evt) {
-  evt.preventDefault();
-}
-
-const galleryImgA = document.querySelector(".gallery a");
-galleryImgA.addEventListener(`click`, elementCaptionOptions);
-function elementCaptionOptions() {
-  let captionOptionsElement = {};
-  return captionOptionsElement;
-}
-
-container.addEventListener(`click`, galleryСlick);
-
-let lightbox = new SimpleLightbox(".gallery a", options);
+const lightbox = new SimpleLightbox(".gallery a", options);
 
 lightbox.on("show.simplelightbox", function () {
   open;
